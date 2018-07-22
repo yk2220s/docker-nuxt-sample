@@ -1,0 +1,12 @@
+# docker-compose
+version: "3"
+services:
+  # starting
+  nuxt:
+    build: .
+    container_name: nuxt
+    ports:
+      - "3000:3000"
+    tty: true
+    volumes:
+      - ".:/usr/src/app:cached"
