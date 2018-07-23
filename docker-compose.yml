@@ -10,3 +10,4 @@ services:
     tty: true
     volumes:
       - ".:/usr/src/app:cached"
+      - "/usr/src/app/node_modules"

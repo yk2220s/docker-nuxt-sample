@@ -6,5 +6,6 @@ WORKDIR /usr/src/app
 RUN apt update -y && \
   apt install -y vim
 RUN yarn global add vue-cli
+ADD ./package.json /usr/src/app
 RUN yarn
 CMD ["yarn", "dev"]
